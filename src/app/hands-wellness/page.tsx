@@ -177,6 +177,8 @@ export default function HandsWellnessPage() {
               <VideoModal
                 src="/videos/hands-wellness.mp4"
                 poster="/images/products/IMG-20251006-WA0028.jpg"
+                title="Hand Wellness Exercises"
+                autoOpen
                 className="w-full"
               />
             </div>
