@@ -2,6 +2,8 @@ import HeroBanner from "@/components/home/HeroBanner";
 import MiddleSection from "@/components/home/MiddleSection";
 import TestimonialsCarousel from "@/components/home/TestimonialsCarousel";
 import BottomCTA from "@/components/home/BottomCTA";
+import MissionStatement from "@/components/home/MissionStatement";
+import CTABanner from "@/components/home/CTABanner";
 import { getTestimonials } from "@/lib/data";
 
 export default function Home() {
@@ -11,8 +13,10 @@ export default function Home() {
     <>
       <HeroBanner />
       <MiddleSection />
-      <TestimonialsCarousel testimonials={testimonials} />
       <BottomCTA />
+      <TestimonialsCarousel testimonials={testimonials} />
+      <MissionStatement />
+      <CTABanner />
     </>
   );
 }

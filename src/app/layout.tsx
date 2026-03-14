@@ -15,18 +15,18 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "ComfortHands | Therapeutic Gloves & Comfort Solutions",
-    template: "%s | ComfortHands",
+    default: "Blueberry Solutions | Comfort Hands Gloves",
+    template: "%s | Blueberry Solutions",
   },
   description:
-    "ComfortHands provides therapeutic gloves and comfort solutions for stress relief, hand comfort, and overall well-being.",
+    "Blueberry Solutions provides Comfort Hands Gloves designed to relax your hands and relieve your stress. Therapeutic gloves for comfort and well-being.",
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || "https://comforthands.care"
   ),
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "ComfortHands",
+    siteName: "Blueberry Solutions",
   },
 };
 

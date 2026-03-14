@@ -1,15 +1,15 @@
 {
-  "companyName": "ComfortHands",
-  "tagline": "Therapeutic Gloves & Comfort Solutions",
-  "phone": "",
-  "email": "gioceci18@gmail.com",
-  "address": "",
+  "companyName": "Blueberry Solutions",
+  "tagline": "Comfort Hands Gloves Relax Your Hands, Relieve Your Stress",
+  "phone": "1-561-336-0847",
+  "email": "support@comforthands.care",
+  "address": "23 Comfort Street, Cozy Town, CT 06510",
   "social": {
     "linkedin": "https://www.linkedin.com/",
     "instagram": "https://www.instagram.com/"
   },
   "logo": "/images/main-logo.png",
   "footerLogo": "/images/footer-logo.png",
-  "copyright": "ComfortHands",
+  "copyright": "Blueberry Solutions",
   "designedBy": "Proweaver"
 }

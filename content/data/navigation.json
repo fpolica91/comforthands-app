@@ -1,17 +1,17 @@
 {
   "primary": [
     { "label": "Home", "href": "/" },
-    { "label": "Who We Are", "href": "/about" },
-    { "label": "Our Products", "href": "/services" },
-    { "label": "Blog", "href": "/blog" },
-    { "label": "Contact Us", "href": "/contact" }
+    { "label": "About Us", "href": "/about", "children": [
+      { "label": "Who We Are", "href": "/about/who-we-are" }
+    ]},
+    { "label": "Contact Us", "href": "/contact" },
+    { "label": "Hands Wellness", "href": "/hands-wellness" }
   ],
   "footer": [
     { "label": "Home", "href": "/" },
-    { "label": "Who We Are", "href": "/about" },
-    { "label": "Our Products", "href": "/services" },
-    { "label": "Blog", "href": "/blog" },
+    { "label": "About Us", "href": "/about" },
     { "label": "Contact Us", "href": "/contact" },
+    { "label": "Hands Wellness", "href": "/hands-wellness" },
     { "label": "Privacy Notice", "href": "/privacy-notice" }
   ],
   "buyNow": {

@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+import { CircleCheckBig } from "lucide-react";
 import { getServices } from "@/lib/data";
 import {
   Card,
@@ -18,11 +17,8 @@ export default function MiddleSection() {
         {/* Section Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-heading mb-3">
-            Our Products
+            Why <span className="text-primary">Blueberry Solutions</span> ?
           </h2>
-          <p className="text-muted-foreground text-lg">
-            Comfort Solutions for Every Need
-          </p>
         </div>
 
         {/* Service Cards Grid */}
@@ -34,13 +30,7 @@ export default function MiddleSection() {
             >
               <CardHeader className="items-center pt-8">
                 <div className="mb-4">
-                  <Image
-                    src={service.icon}
-                    alt={service.title}
-                    width={64}
-                    height={64}
-                    className="object-contain"
-                  />
+                  <CircleCheckBig className="size-16 text-secondary" />
                 </div>
                 <CardTitle className="text-xl font-semibold text-heading">
                   {service.title}
@@ -50,14 +40,6 @@ export default function MiddleSection() {
                 <CardDescription className="text-base leading-relaxed">
                   {service.description}
                 </CardDescription>
-                <a
-                  href="https://www.amazon.com/dp/B0G7699CR7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-pill inline-flex items-center justify-center bg-secondary text-white hover:bg-secondary/90 transition-colors mt-auto font-medium text-sm"
-                >
-                  Get Yours
-                </a>
               </CardContent>
             </Card>
           ))}

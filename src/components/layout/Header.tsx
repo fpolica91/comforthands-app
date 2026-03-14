@@ -34,7 +34,7 @@ export default function Header() {
                 href={`mailto:${config.email}`}
                 className="flex items-center gap-2 text-[17px] text-white hover:underline transition-colors font-light"
               >
-                {config.email}
+                Email Us Today! {config.email}
               </a>
 
               {/* Divider */}

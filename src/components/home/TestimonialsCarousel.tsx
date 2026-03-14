@@ -42,7 +42,7 @@ export default function TestimonialsCarousel({
         {/* Section Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-heading">
-            What Our Clients Say
+            What Our Community Says
           </h2>
         </div>
 
