@@ -36,8 +36,10 @@ export default function HeroBanner() {
               overall well-being.
             </p>
             <div>
-              <Link
-                href="/services"
+              <a
+                href="https://www.amazon.com/dp/B0G7699CR7"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={cn(
                   buttonVariants(),
                   "btn-pill bg-secondary text-white hover:bg-secondary/90 gap-2"
@@ -45,7 +47,7 @@ export default function HeroBanner() {
               >
                 Shop Now
                 <ArrowRight className="size-5" />
-              </Link>
+              </a>
             </div>
           </div>
 

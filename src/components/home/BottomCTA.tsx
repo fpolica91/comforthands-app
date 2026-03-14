@@ -40,12 +40,14 @@ export default function BottomCTA() {
               products are designed with your well-being in mind.
             </p>
             <div>
-              <Link
-                href="/contact"
+              <a
+                href="https://www.amazon.com/dp/B0G7699CR7"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-pill inline-flex items-center justify-center bg-secondary text-white hover:bg-secondary/90 transition-colors font-medium text-sm"
               >
-                Contact Us
-              </Link>
+                Buy Now
+              </a>
             </div>
           </div>
         </div>

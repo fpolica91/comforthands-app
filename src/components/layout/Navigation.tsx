@@ -45,8 +45,10 @@ export function Navigation({ items, buyNow }: NavigationProps) {
             </ul>
 
             {/* Buy Now button */}
-            <Link
+            <a
               href={buyNow.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="relative bg-secondary text-white rounded-[28px] h-[55px] w-[165px] text-base font-normal uppercase inline-flex items-center pl-7 hover:opacity-60 transition-opacity"
             >
               {buyNow.label}
@@ -57,7 +59,7 @@ export function Navigation({ items, buyNow }: NavigationProps) {
                 height={20}
                 className="absolute right-8 top-1/2 -translate-y-1/2"
               />
-            </Link>
+            </a>
           </div>
         </div>
       </nav>

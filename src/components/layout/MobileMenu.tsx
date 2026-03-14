@@ -119,14 +119,14 @@ export function MobileMenu({ items, buyNow, logo, companyName }: MobileMenuProps
 
         {/* Buy Now Button */}
         <div className="p-4 mt-auto">
-          <SheetClose render={<div />}>
-            <Link
-              href={buyNow.href}
-              className="block w-full text-center bg-secondary text-white rounded-[31px] h-[48px] leading-[48px] text-sm font-medium uppercase tracking-wide hover:bg-secondary/90 transition-colors"
-            >
-              {buyNow.label}
-            </Link>
-          </SheetClose>
+          <a
+            href={buyNow.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full text-center bg-secondary text-white rounded-[31px] h-[48px] leading-[48px] text-sm font-medium uppercase tracking-wide hover:bg-secondary/90 transition-colors"
+          >
+            {buyNow.label}
+          </a>
         </div>
       </SheetContent>
     </Sheet>

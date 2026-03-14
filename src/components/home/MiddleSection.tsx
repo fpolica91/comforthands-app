@@ -50,12 +50,14 @@ export default function MiddleSection() {
                 <CardDescription className="text-base leading-relaxed">
                   {service.description}
                 </CardDescription>
-                <Link
-                  href="/services"
+                <a
+                  href="https://www.amazon.com/dp/B0G7699CR7"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-pill inline-flex items-center justify-center bg-secondary text-white hover:bg-secondary/90 transition-colors mt-auto font-medium text-sm"
                 >
-                  Learn More
-                </Link>
+                  Get Yours
+                </a>
               </CardContent>
             </Card>
           ))}

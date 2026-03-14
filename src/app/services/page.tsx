@@ -60,12 +60,14 @@ export default function ServicesPage() {
                   <p className="text-sm leading-relaxed text-muted-foreground">
                     {service.description}
                   </p>
-                  <Link
-                    href={`/services/${service.slug}`}
+                  <a
+                    href="https://www.amazon.com/dp/B0G7699CR7"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex h-9 items-center justify-center rounded-lg bg-secondary px-5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/80"
                   >
-                    Learn More
-                  </Link>
+                    Buy Now
+                  </a>
                 </CardContent>
               </Card>
             ))}
@@ -84,12 +86,14 @@ export default function ServicesPage() {
             here to help you find the perfect comfort solution for your
             needs.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="https://www.amazon.com/dp/B0G7699CR7"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-pill inline-flex items-center justify-center bg-secondary text-white transition-colors hover:bg-secondary/90"
           >
-            Contact Us
-          </Link>
+            Buy Now on Amazon
+          </a>
         </div>
       </section>
     </>
