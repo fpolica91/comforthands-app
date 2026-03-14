@@ -31,8 +31,8 @@ export default function MissionStatement() {
           <div className="w-full lg:w-1/2 flex gap-4">
             <div className="w-1/2">
               <Image
-                src="/images/uploads/gloves-closeup.jpg"
-                alt="Comfort Hands Gloves closeup"
+                src="/images/btm2_img1.png"
+                alt="A glove with color gray"
                 width={400}
                 height={500}
                 className="w-full h-auto rounded-2xl object-cover"
@@ -40,8 +40,8 @@ export default function MissionStatement() {
             </div>
             <div className="w-1/2">
               <Image
-                src="/images/uploads/gloves-worn.jpg"
-                alt="Comfort Hands Gloves being worn"
+                src="/images/btm2_img2.png"
+                alt="A glove color gray"
                 width={400}
                 height={500}
                 className="w-full h-auto rounded-2xl object-cover"
