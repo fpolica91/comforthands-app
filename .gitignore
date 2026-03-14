@@ -28,5 +28,5 @@ yarn-error.log*
 # vercel
 .vercel
 
-# Large video files (host on CDN)
+# Original uncompressed video (211MB)
 public/videos/VideoBanner.mp4
