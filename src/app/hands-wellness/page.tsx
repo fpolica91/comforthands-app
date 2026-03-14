@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Gauge, Calendar, Ear, ShieldCheck } from "lucide-react";
 import PageBanner from "@/components/layout/PageBanner";
+import VideoModal from "@/components/shared/VideoModal";
 import {
   Card,
   CardHeader,
@@ -167,37 +168,36 @@ export default function HandsWellnessPage() {
         imageSrc="/images/banners/hands-wellness.jpg"
       />
 
-      {/* Video Section */}
+      {/* Video + Introduction Section */}
       <section className="py-16 md:py-20">
-        <div className="wrapper flex justify-center">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full max-w-[800px] rounded-xl"
-          >
-            <source src="/videos/hands-wellness.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </section>
+        <div className="wrapper">
+          <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
+            {/* Video Modal Trigger */}
+            <div className="w-full lg:w-1/2">
+              <VideoModal
+                src="/videos/hands-wellness.mp4"
+                poster="/images/products/IMG-20251006-WA0028.jpg"
+                className="w-full"
+              />
+            </div>
 
-      {/* Introduction Section */}
-      <section className="py-16 md:py-20">
-        <div className="wrapper text-center">
-          <h2 className="mb-6 text-3xl font-bold md:text-4xl">
-            Hand Wellness Exercises
-          </h2>
-          <p className="mx-auto max-w-3xl text-lg leading-relaxed text-muted-foreground">
-            Your hands work hard every day — hand fatigue and stiffness can
-            build up over time. Our{" "}
-            <span className="font-semibold text-primary">
-              Blueberry Solutions
-            </span>{" "}
-            therapeutic gloves are designed to support your hands during these
-            simple, effective exercises that promote strength, flexibility, and
-            relief.
-          </p>
+            {/* Text */}
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <h2 className="mb-6 text-3xl font-bold md:text-4xl">
+                Hand Wellness Exercises
+              </h2>
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                Your hands work hard every day — hand fatigue and stiffness can
+                build up over time. Our{" "}
+                <span className="font-semibold text-primary">
+                  Blueberry Solutions
+                </span>{" "}
+                therapeutic gloves are designed to support your hands during
+                these simple, effective exercises that promote strength,
+                flexibility, and relief.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
