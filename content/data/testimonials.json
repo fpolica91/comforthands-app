@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Jennifer",
+    "age": 52,
+    "rating": 5,
+    "quote": "Blueberry Solutions gloves have been a game-changer for me. As someone who deals with daily stress, these gloves have helped me manage my tension and improve my overall well-being.",
+    "image": "/images/thumbnails/thumb-91028585.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Michael",
+    "age": 58,
+    "rating": 5,
+    "quote": "I was skeptical at first, but these gloves have made a noticeable difference in my hand comfort. They are perfect for long days at the computer or during stressful periods at work.",
+    "image": "/images/dummy.png"
+  },
+  {
+    "id": 3,
+    "name": "William Vang",
+    "age": null,
+    "rating": 5,
+    "quote": "These therapeutic gloves have truly improved my quality of life. The comfort they provide throughout the day is remarkable. I highly recommend them to anyone seeking relief.",
+    "image": "/images/thumbnails/william-vang.jpg"
+  }
+]

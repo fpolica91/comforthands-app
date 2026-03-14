@@ -1,0 +1,21 @@
+{
+  "primary": [
+    { "label": "Home", "href": "/" },
+    { "label": "Who We Are", "href": "/about" },
+    { "label": "Our Products", "href": "/services" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Contact Us", "href": "/contact" }
+  ],
+  "footer": [
+    { "label": "Home", "href": "/" },
+    { "label": "Who We Are", "href": "/about" },
+    { "label": "Our Products", "href": "/services" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Contact Us", "href": "/contact" },
+    { "label": "Privacy Notice", "href": "/privacy-notice" }
+  ],
+  "buyNow": {
+    "label": "Buy Now",
+    "href": "/services"
+  }
+}

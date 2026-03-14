@@ -1,0 +1,26 @@
+[
+  {
+    "id": "therapeutic-gloves",
+    "title": "Therapeutic Gloves",
+    "description": "Our premium therapeutic gloves are designed to provide comfort and relief for daily stress, hand fatigue, and tension. Perfect for long days at work or during stressful periods.",
+    "icon": "/images/icons/midde_icon1.png",
+    "image": "/images/services/thumb-id1.jpg",
+    "slug": "therapeutic-gloves"
+  },
+  {
+    "id": "comfort-solutions",
+    "title": "Comfort Solutions",
+    "description": "Explore our range of comfort solutions designed to improve your overall well-being. From stress relief to daily hand comfort, we have you covered.",
+    "icon": "/images/icons/middle_side.png",
+    "image": "/images/services/thumb-id2.jpg",
+    "slug": "comfort-solutions"
+  },
+  {
+    "id": "wellness-products",
+    "title": "Wellness Products",
+    "description": "Discover our wellness product line that promotes relaxation and comfort. Each product is carefully crafted to support your health and well-being journey.",
+    "icon": "/images/icons/header-icon1.png",
+    "image": "/images/services/thumb-id3.jpg",
+    "slug": "wellness-products"
+  }
+]
