@@ -65,12 +65,12 @@ export default function VideoModal({
       <Dialog open={open} onOpenChange={handleOpenChange}>
         <DialogContent
           showCloseButton
-          className="sm:max-w-4xl bg-black p-0 border-none ring-0"
+          className="sm:max-w-lg bg-black p-0 border-none ring-0 max-h-[85vh] overflow-hidden"
         >
           <DialogTitle className="sr-only">{title}</DialogTitle>
           <video
             ref={videoRef}
-            className="w-full rounded-xl"
+            className="w-full max-h-[80vh] rounded-xl object-contain"
             controls
             autoPlay
             playsInline
