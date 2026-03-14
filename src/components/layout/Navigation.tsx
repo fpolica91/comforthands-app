@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { MobileMenu } from "./MobileMenu";
@@ -13,27 +14,27 @@ interface NavigationProps {
   companyName: string;
 }
 
-export function Navigation({ items, buyNow, logo, companyName }: NavigationProps) {
+export function Navigation({ items, buyNow }: NavigationProps) {
   const pathname = usePathname();
 
   return (
     <>
-      {/* Desktop Navigation */}
-      <nav className="hidden lg:block bg-primary">
+      {/* Desktop Navigation — inside the olive green header */}
+      <nav className="hidden lg:block" aria-label="Main navigation">
         <div className="w-full max-w-[1375px] mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="flex items-center justify-between h-[55px]">
-            <ul className="flex items-center gap-1">
+          <div className="flex items-center justify-between h-[60px]">
+            {/* Nav links */}
+            <ul className="flex items-center">
               {items.map((item) => {
                 const isActive = pathname === item.href;
                 return (
-                  <li key={item.href}>
+                  <li key={item.href} className="relative">
                     <Link
                       href={item.href}
                       className={cn(
-                        "px-4 py-2 text-[13px] font-medium uppercase tracking-wider text-white transition-colors relative",
-                        "hover:after:absolute hover:after:bottom-0 hover:after:left-4 hover:after:right-4 hover:after:h-[2px] hover:after:bg-white",
-                        isActive &&
-                          "after:absolute after:bottom-0 after:left-4 after:right-4 after:h-[2px] after:bg-white"
+                        "block px-5 py-4 text-[18px] font-normal uppercase text-white transition-all",
+                        "hover:underline underline-offset-4",
+                        isActive && "underline underline-offset-4"
                       )}
                     >
                       {item.label}
@@ -43,17 +44,23 @@ export function Navigation({ items, buyNow, logo, companyName }: NavigationProps
               })}
             </ul>
 
+            {/* Buy Now button */}
             <Link
               href={buyNow.href}
-              className="bg-secondary text-white rounded-[31px] h-[40px] px-7 text-[13px] font-medium uppercase tracking-wider inline-flex items-center justify-center hover:bg-secondary/90 transition-colors"
+              className="relative bg-secondary text-white rounded-[28px] h-[55px] w-[165px] text-base font-normal uppercase inline-flex items-center pl-7 hover:opacity-60 transition-opacity"
             >
               {buyNow.label}
+              <Image
+                src="/images/icons/arrow.png"
+                alt=""
+                width={20}
+                height={20}
+                className="absolute right-8 top-1/2 -translate-y-1/2"
+              />
             </Link>
           </div>
         </div>
       </nav>
-
-      {/* Mobile: hamburger trigger is inside the Header via MobileMenuTrigger */}
     </>
   );
 }
